@@ -1,0 +1,219 @@
+html {
+      font-family: Arial, Helvetica, sans-serif;
+      user-select: none;
+}
+header {
+      background-color: rgb(51, 51, 51);
+      color: rgb(231, 231, 231);
+      padding: 1rem;
+      margin-bottom: 1rem;
+}
+body {
+      cursor: default;
+      margin: 0;
+}
+h1 {
+      text-align: center;
+      margin: 0;
+      font-size: 2.2rem;
+}
+#instructions {
+      background-color: #fff;
+      border: 1px gray solid;
+      border-radius: 0.5rem;
+      padding-top: 0.3rem;
+}
+#instructions p {
+      margin: 0.5rem;
+}
+fieldset {
+      border: none;
+}
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.container-container {
+      display: flex;
+      flex-direction: row;
+}
+/* #div-spacer, */
+.leader-board-container {
+      width: max-content;
+      height: 4rem;
+      padding: 1.3rem;
+      margin: 1rem 1.3rem;
+}
+.leader-board-container {
+      background-color: beige;
+      border: 1px solid gray;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+}
+#leader-board-table {
+      display: flex;
+      flex-direction: row;
+}
+#leader-board-table * {
+      padding: 0.1rem 0.3rem;
+}
+.quiz-container {
+      background-color: beige;
+      border: 1px solid gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.3rem;
+      margin: 1rem auto;
+      border-radius: 0.5rem;
+      max-width: fit-content;
+}
+#kana-switcher {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.2rem;
+}
+.kana-switcher-item {
+      background-color: white;
+      border: 1px gray solid;
+      padding: 0.7rem 1rem;
+      margin: 0.2rem;
+      border-radius: 0.5rem;
+      font-size: 1.1rem;
+}
+.kana-switcher-item:hover {
+      background-color: rgb(197, 197, 197);
+      cursor: pointer;
+}
+.active-kana {
+      background-color: rgb(215, 184, 255) !important;
+}
+kbd {
+      background-color: black;
+      color: white;
+      padding: 0.1rem 0.3rem;
+      border: 1px rgb(163, 163, 163) solid;
+      border-radius: 0.4rem;
+      outline: black 1px solid;
+      font-weight: bold;
+}
+#test-kana {
+      font-size: 4rem;
+      padding: 2rem;
+      background-color: #fff;
+      border: 1px solid gray;
+      border-radius: 0.5rem;
+      height: 5rem;
+      width: 5rem;
+      text-align: center;
+}
+#romaji {
+      /* color: red; */
+      font-size: 1.5rem;
+      background-color: rgb(63, 63, 63);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid gray;
+      width: 4rem;
+      text-align: center;
+      margin-top: 1.2rem;
+}
+#romaji:focus {
+      outline: none;
+}
+#down-arrow {
+      transform: rotate(90deg);
+      width: 1rem;
+      padding: 0.2rem;
+}
+#last-romaji {
+      font-size: 1.2rem;
+      background-color: rgb(114, 114, 114);
+      color: rgb(189, 189, 189);
+      padding: 0.5rem 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid gray;
+      width: 4rem;
+      text-align: center;
+}
+#last-romaji:focus {
+      user-select: none;
+      outline: none;
+}
+#score {
+      background-color: white;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid gray;
+      font-size: 1.1rem;
+}
+#correct {
+      color: green;
+      font-weight: bold;
+}
+#correct::before {
+      content: "Correct: ";
+}
+
+#incorrect {
+      color: red;
+      font-weight: bold;
+}
+#incorrect::before {
+      content: "Incorrect: ";
+}
+.buttons button {
+      padding: 0.6rem;
+      width: 6rem;
+      font-size: 1.3rem;
+      border-radius: 0.5rem;
+      border: 1px gray solid;
+      cursor: pointer;
+}
+.active-play {
+      background-color: rgb(115, 215, 255);
+}
+.active-play:hover {
+      background-color: rgb(45, 196, 255);
+}
+.inactive-play {
+      background-color: rgb(180, 180, 180);
+}
+#reset {
+      background-color: rgb(255, 122, 122);
+}
+#reset:hover {
+      background-color: rgb(255, 53, 53);
+}
+.modal {
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.128);
+}
+.modal div {
+      background-color: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.435);
+      border-radius: 5px;
+      width: fit-content;
+      text-align: center;
+}
+#incorrect-modal {
+      background-color: rgba(189, 0, 0, 0.445);
+}
+#incorrect-modal div {
+      box-shadow: 0 0 10px 3px rgba(79, 0, 0, 0.608);
+}

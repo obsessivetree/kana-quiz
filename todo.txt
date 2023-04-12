@@ -1,0 +1,5 @@
+- incorrect alert- change to erase input, flash red, flash "incorrect"
+- reset game on load/ new game/ reset
+- add mixed kana game
+- add timer
+- add timed game leaderboard

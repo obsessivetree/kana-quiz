@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/mpeg" href="#" />
+        <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Kana Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Kana Quiz</h1>
+        </header>
+        <main>
+            <div id="instructions">
+                <fieldset>
+                    <legend>
+                        <p>
+                            <strong>Instructions:</strong>
+                        </p>
+                    </legend>
+                    <p>
+                        Choose a kana to practice, hit play, and just type the
+                        romaji!
+                    </p>
+                    <p>
+                        You can also use
+                        <kbd>ENTER</kbd> to start, <kbd>Q</kbd> to reset, and
+                        <kbd>&larr;</kbd>
+                        <kbd>&rarr;</kbd> to select a kana.
+                    </p>
+                </fieldset>
+            </div>
+            <div class="container-container">
+                <!-- <div class="leader-board-container">
+          <div id="leader-board-title">Leaderboard</div>
+          <div id="leader-board-table">
+            <div id="leader-board-time">1:00</div>
+            <div id="leader-board-correct">30</div>
+            <div id="leader-board-incorrect">2</div>
+            <div id="leader-board-kana-type">katakana</div>
+          </div>
+        </div> -->
+                <div class="quiz-container">
+                    <div id="kana-switcher">
+                        <div
+                            id="hira"
+                            title="Hiragana Quiz"
+                            class="kana-switcher-item"
+                        >
+                            Hiragana
+                        </div>
+                        <div
+                            id="both"
+                            title="Katakana Quiz"
+                            class="kana-switcher-item"
+                        >
+                            Both
+                        </div>
+                        <div
+                            id="kata"
+                            title="Katakana Quiz"
+                            class="kana-switcher-item"
+                        >
+                            Katakana
+                        </div>
+                    </div>
+                    <div id="test-kana"></div>
+                    <input id="romaji" type="text" readonly />
+                    <!-- <p id="down-arrow">&darr;</p> -->
+                    <img
+                        src="./imgs/play.svg"
+                        id="down-arrow"
+                        alt=""
+                        srcset=""
+                    />
+                    <input id="last-romaji" type="text" readonly />
+                    <div id="score">
+                        <span id="correct"></span>
+                        &ThickSpace;
+                        <span id="incorrect"></span>
+                    </div>
+                </div>
+                <div id="div-spacer"></div>
+            </div>
+            <div class="buttons">
+                <button id="play" class="active-play">
+                    Play
+                    <p style="font-size: 0.5em"><kbd>enter</kbd></p>
+                </button>
+                <button id="reset">
+                    Reset
+                    <p style="font-size: 0.5em"><kbd>q</kbd></p>
+                </button>
+            </div>
+        </main>
+        <div id="incorrect-modal" class="modal">
+            <div>
+                <h2>Incorrect!</h2>
+                <p>Hit <kbd>Enter</kbd> to try again...</p>
+                <!-- <p>Hit <kbd>F</kbd>*** it to give up...</p> -->
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>
